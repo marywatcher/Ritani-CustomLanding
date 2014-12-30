@@ -1,0 +1,12 @@
+#accordion h3 { 
+    background: #F0EFEF;
+    border: 1px solid #D2D2D2;
+    color: #2F64C0;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+#accordion div { background: #FFF; font-size: 16px; letter-spacing: 0; padding-top: 30px; padding-bottom: 50px; }
+.ui-corner-all, .ui-corner-top, .ui-corner-bottom { border-radius: 0 }

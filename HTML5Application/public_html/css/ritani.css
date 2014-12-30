@@ -2,6 +2,8 @@
 .container { margin: 0 auto; }
 a { text-decoration: none; }
 strong { font-weight: 800 ; }
+ul, ol { list-style-type: none; }
+.mini-logo { background: url('../img/ritani-logo.png') no-repeat top left; width: 52px; height: 52px; display: block; margin: 0 auto 10px; }
 
 #nav {
     height: 48px;
@@ -10,11 +12,13 @@ strong { font-weight: 800 ; }
     -moz-box-shadow: 0px 1px 1px 0px rgba(181,178,178,1);
     box-shadow: 0px 1px 1px 0px rgba(181,178,178,1);
     background: #F0EFEF;
-    display: none;
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
 }
-#nav ul { list-style-type: none; height: 48px; }
+#nav ul { height: 48px; }
 #nav ul li { display: inline-block; width: 19%}
-#nav a { color: #362930; line-height: 3.1em; display: block; text-align: center; }
+#nav a { color: #362930; line-height: 3.1em; display: block; text-align: center; letter-spacing: 0 }
 #nav a.cta { background: #601F40; color: #FFF; }
 
 #header { background: #030302 url('../img/ritani-banner.jpg') no-repeat center center; background-size: cover; width: 100%; color: #FFF; }
@@ -72,7 +76,136 @@ strong { font-weight: 800 ; }
 #testimonials div.testim3 { width: 536px; margin-left: 9%; margin-top: 170px; }
 #testimonials div.testim3 strong { position: relative; top: -40px; left: 0px; }
 
-#benefits { background: #601F40 url('../img/benefits-bg.gif') no-repeat top left; background-size: 100%; min-height: 736px; }
+#benefits { background: #601F40 url('../img/benefits-bg.gif') no-repeat top left; background-size: 100%; min-height: 736px; padding-bottom: 75px; }
+#benefits ul.header { padding-top: 105px; }
+#benefits ul ul li { display: inline-block; }
+#benefits li { color: #FFF; }
+#benefits ul.header { text-transform: uppercase; border-bottom: 1px solid #FFF; padding-bottom: 23px; }
+#benefits ul.header li { font-size: 12px; font-weight: 800; }
+#benefits li.first { width: 42%; }
+#benefits li.second { width: 24%; }
+#benefits li.third { width: 33%; }
+#benefits ul.header li.first, #benefits ul.header li.second, #benefits ul.header li.third, #benefits .row li.second { text-align: center; vertical-align: bottom; }
+#benefits ul.header h1 { font: 48px "Open Sans Condensed"; text-align: left; float: left; margin-left: 10px; }
+#benefits ul.header li.third span { font-weight: 300; font-size: 12px; display: block; }
+
+#benefits .row li { background: url('../img/opacity15.png'); vertical-align: top; height: 128px; border-bottom: 1px solid #601F40; }
+#benefits .row li span { margin: 40px; display: block; letter-spacing: 0; }
+#benefits .row li.second img { margin-top: 35px; }
+#benefits .row li.third { background: url('../img/opacity10.png'); font-size: 14px; font-style: italic; }
+#benefits .row li.less-margin span { margin: 25px; }
+
+#browse { height: 530px; max-height: 530px; }
+#browse > a { float: left; width: 50%; height: 530px; max-height: 530px; background-size: 100%; text-align: center; color: #FFF; text-transform: uppercase; font-weight: bold; line-height: 4em; position: relative; }
+#browse > a span { background-size: 100%; display: block; height: 63px; max-height: 63px; margin: 266px auto 0; position: relative; z-index: 1;}
+#browse .engagement-rings { background: url('../img/engagement-rings.jpg') no-repeat center; }
+#browse .engagement-rings span { background: url('../img/engagement-rings-btn.jpg') no-repeat top left; width: 400px; max-width: 400px; }
+#browse .wedding-bands { background: url('../img/wedding-bands.jpg') no-repeat center; }
+#browse .wedding-bands span { background: url('../img/wedding-bands-btn.jpg') no-repeat top left; width: 374px; max-width: 374px; }
+#browse a .overlay { 
+    background: #030302;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    -moz-opacity:0;
+    -khtml-opacity: 0;
+    opacity: 0;
+    -webkit-transition: opacity 500ms ease-out;
+    -moz-transition: opacity 500ms ease-out;
+    -o-transition: opacity 500ms ease-out;
+    transition: opacity 500ms ease-out;
+}
+#browse .engagement-rings:hover .overlay,
+#browse .wedding-bands:hover .overlay {
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+    filter: alpha(opacity=60);
+    -moz-opacity:0.6;
+    -khtml-opacity: 0.6;
+    opacity: 0.6;
+}
+
+#how-it-works { background: #362930; color: #FFF; padding: 97px 0 27px; }
+#how-it-works h4, #how-it-works h5 { text-transform: uppercase; text-align: center; }
+#how-it-works h4 { font: 800 70px Open Sans; line-height: 1em; }
+#how-it-works h5 { font: 300 28px Open Sans; }
+#how-it-works ul li { width: 25%; display: inline-block; padding-top: 485px; margin: 0; background-size: 100%; vertical-align: top; }
+#how-it-works ul li * { margin: 0 10%; }
+#how-it-works ul li span { color: #E3B700; font-size: 20px; font-weight: bold; text-transform: uppercase; display: block; height: 70px;  }
+#how-it-works ul li.you-add { background: url('../img/you-add.jpg') no-repeat top center; }
+#how-it-works ul li.we-handcraft { background: url('../img/we-handcraft.jpg') no-repeat top center; }
+#how-it-works ul li.we-ship { background: url('../img/we-ship.jpg') no-repeat top center; }
+#how-it-works ul li.free-preview { background: url('../img/free-preview.jpg') no-repeat top center; }
+
+#choose-diamond, #choose-ring {
+    text-align: center;
+    max-height: 600px;
+    height: 600px;
+
+    /* fallback */
+    background-color: #EFEEEE;
+
+    /* Safari 4-5, Chrome 1-9 */
+    /* Can't specify a percentage size? Laaaaaame. */
+    background: -webkit-gradient(radial, center center, 0, center center, 460, from(#FFFFFF), to(#EFEEEE));
+
+    /* Safari 5.1+, Chrome 10+ */
+    background: -webkit-radial-gradient(circle, #FFFFFF, #EFEEEE);
+
+    /* Firefox 3.6+ */
+    background: -moz-radial-gradient(circle, #FFFFFF, #EFEEEE);
+
+    /* IE 10 */
+    background: -ms-radial-gradient(circle, #FFFFFF, #EFEEEE);
+}
+
+#choose-diamond h1, #choose-ring h1 { font: 48px "Open Sans Condensed"; color: #030302; text-align: center; text-transform: uppercase; padding-top: 107px; }
+#choose-diamond a.btn, #choose-ring a.btn { 
+    display: inline-block;
+    margin: 18px 0 78px;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 31px 36px;
+    -webkit-transition : background-color 500ms ease-out;
+    -moz-transition : background-color 500ms ease-out;
+    -o-transition : background-color 500ms ease-out;
+    transition : background-color 500ms ease-out;
+    -webkit-transition: color .2s linear;
+    -moz-transition: color .2s linear;
+    -o-transition: color .2s linear;
+    transition: color .2s linear;
+}
+#choose-diamond a.btn { background: #030302; color: #E3B700; }
+#choose-diamond a.btn:hover { background: #E3B700; color: #030302; }
+#choose-ring a.btn { background: #E3B700; color: #030302; }
+#choose-ring a.btn:hover { background: #030302; color: #E3B700; }
+
+#choose-ring { 
+    background-color: #030302;
+
+    /* Safari 4-5, Chrome 1-9 */
+    /* Can't specify a percentage size? Laaaaaame. */
+    background: -webkit-gradient(radial, center center, 0, center center, 460, from(#10100F), to(#030302));
+
+    /* Safari 5.1+, Chrome 10+ */
+    background: -webkit-radial-gradient(circle, #10100F, #030302);
+
+    /* Firefox 3.6+ */
+    background: -moz-radial-gradient(circle, #10100F, #030302);
+
+    /* IE 10 */
+    background: -ms-radial-gradient(circle, #10100F, #030302);
+}
+#choose-ring h1 { color: #FFF; }
+
+#common-quest { padding: 115px 0 40px;}
+#common-quest h1 { color: #050504; font-size: 36px; text-transform: uppercase; text-align: center; font-weight: 400; margin-bottom: 80px; }
+#common-quest span.italic { color: #601F40; font-style: italic !important; font: 400 14px "Open Sans"; letter-spacing: 0 !important; display: block; margin-top: 30px; }
 
 /* Desktops and laptops ----------- */
 @media only screen 

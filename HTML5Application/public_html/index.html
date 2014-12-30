@@ -6,7 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/ritani.css" rel="stylesheet">
+    <!-- Accordion Files -->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link href="css/accordion.css" rel="stylesheet">
+    <!-- Carousel Files -->
+    <link rel="stylesheet" type="text/css" media="screen" href="css/als_style.css" />
     <link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans+Condensed:light" rel="stylesheet" type="text/css">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 	<!--[if lt IE 9]>
@@ -18,15 +25,15 @@
     <nav id="nav">
         <div class="container">
             <ul>
-                <li><a href="#">Customer Reviews</a></li>
-                <li><a href="#">Benefits of Ritani</a></li>
-                <li><a href="#">How it Works</a></li>
-                <li><a href="#">Common Questions</a></li>
+                <li><a href="#testimonials">Customer Reviews</a></li>
+                <li><a href="#benefits">Benefits of Ritani</a></li>
+                <li><a href="#how-it-works">How it Works</a></li>
+                <li><a href="#common-quest">Common Questions</a></li>
                 <li><a href="#" class="cta">Start a Custom Ring</a></li>
             </ul>
         </div>
     </nav>
-    <header id="header" role="banner">
+    <header id="header">
         <div class="container">
             <a href="#" id="logo">&nbsp;</a>
             <h2>Design custom rings</h2>
@@ -55,29 +62,211 @@
     </section>
     <section id="benefits">
         <div class="container">
-            <h1>Benefits of Ritani</h1>
             <ul>
                 <li>
-                    <ul>
-                        <li></li>
-                        <li></li>
-                        <li></li>
+                    <ul class="header">
+                        <li class="first"><h1>Benefits of Ritani</h1></li><li class="second">
+                            <span class="mini-logo">&nbsp;</span>Free in-store preview</li><li class="third">
+                            Typical online-retailer</li>
+                    </ul>
+                </li>
+                <li>
+                    <ul class="row">
+                        <li class="first"><span>View a completed ring or loose diamond free</span></li><li class="second">
+                            <img src="img/check.png" alt="">
+                        </li><li class="third">
+                            <span>Must purchase your ring to see it in person.</span></li>
+                    </ul>
+                </li>
+                <li>
+                    <ul class="row">
+                        <li class="first"><span>Actual diamond photos and videos</span></li><li class="second">
+                            <img src="img/check.png" alt="">
+                        </li><li class="third">
+                            <span>Sample diamond images.</span></li>
+                    </ul>
+                </li>
+                <li>
+                    <ul class="row">
+                        <li class="first"><span>Instant, "just walk away" returns</span></li><li class="second">
+                            <img src="img/check.png" alt="">
+                        </li><li class="third less-margin">
+                            <span>
+                                1. Visit your shipping agent<br>
+                                2. Pay for return shipping and insurance<br>
+                                3. Wait weeks for your refund.
+                            </span></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <ul class="header">
+                        <li class="first"></li><li class="second">
+                            <span class="mini-logo">&nbsp;</span></li><li class="third">
+                            Typical retail store
+                            <span>(Those not offering Ritani’s exclusive free preview)</span></li>
+                    </ul>
+                </li>
+                <li>
+                    <ul class="row">
+                        <li class="first"><span>Your choice of five metals</span></li><li class="second">
+                            <img src="img/check.png" alt="">
+                        </li><li class="third">
+                            <span>Carry only <strong>one metal</strong> per style in-store</span></li>
+                    </ul>
+                </li>
+                <li>
+                    <ul class="row">
+                        <li class="first"><span>Your unique diamond</span></li><li class="second">
+                            <img src="img/check.png" alt="">
+                        </li><li class="third">
+                            <span>Rings set with cubic zirconia</span></li>
+                    </ul>
+                </li>
+                <li>
+                    <ul class="row">
+                        <li class="first"><span>Correct ring size</span></li><li class="second">
+                            <img src="img/check.png" alt="">
+                        </li><li class="third"><span>Only one size available in display case.</span></li>
+                    </ul>
+                </li>
+                <li>
+                    <ul class="row">
+                        <li class="first"><span>Available for same-day purchase</span></li><li class="second">
+                            <img src="img/check.png" alt="">
+                        </li><li class="third"><span>Ring sizing and setting may take over a week.</span></li>
                     </ul>
                 </li>
             </ul>
         </div>
     </section>
     <section id="browse">
-        <a href="#" class="engagement-rings"></a>
-        <a href="#" class="wedding-bands"></a>
+        <a href="#" class="engagement-rings"><div class="overlay"></div><span>browse engagement rings</span></a>
+        <a href="#" class="wedding-bands"><div class="overlay"></div><span>wedding bands catalog</span></a>
     </section>
     <section id="how-it-works">
-        
+        <h4>how it works</h4>
+        <h5>No obligations. 100% Satisfaction.</h5>
+        <ul>
+            <li class="you-add">
+                <span>you add.</span>
+                <p>Add a loose Diamond, ring, or designer Collection item to your cart and choose "Free In-Store Preview."</p>
+            </li><li class="we-handcraft">
+                <span>We Handcraft.</span>
+                <p>Ritani handcrafts your item and appraises its value before shipment.</p>
+            </li><li class="we-ship">
+                <span>We Ship. Free.</span>
+                <p>A credit card hold secures your preview reservation. We ship your item to a Ritani jeweler near you for free.</p>
+            </li><li class="free-preview">
+                <span>Free preview.<br>No obligation.</span>
+                <p>Visit your jeweler to see your item in person for free. Buy today or walk away. The hold is released with no obligation.</p>
+            </li>
+        </ul>
     </section>
-    <section id="choose-diamond"></section>
-    <section id="choose-ring"></section>
+    <section id="choose-diamond">
+        <h1>Choose your diamond</h1>
+        <div id="CH-Diam" class="als-container">
+            <span class="als-prev"><img src="img/arrow1-left.png" alt="prev" title="previous"></span>
+            <div class="als-viewport">
+                <ul class="als-wrapper">
+                    <li class="als-item"><img src="img/diamond1.png" alt=""></li>
+                    <li class="als-item"><img src="img/diamond2.png" alt=""></li>
+                    <li class="als-item"><img src="img/diamond3.png" alt=""></li>
+                    <li class="als-item"><img src="img/diamond4.png" alt=""></li>
+                    <li class="als-item"><img src="img/diamond5.png" alt=""></li>
+                    <li class="als-item"><img src="img/diamond6.png" alt=""></li>
+                    <li class="als-item"><img src="img/diamond7.png" alt=""></li>
+                </ul>
+            </div>
+            <span class="als-next"><img src="img/arrow1-right.png" alt="next" title="next"></span>
+        </div>
+        <a href="#" class="btn">Start creating your ring</a>
+    </section>
+    <section id="choose-ring">
+        <h1>Choose your ring</h1>
+        <div id="CH-Ring" class="als-container">
+            <span class="als-prev"><img src="img/arrow2-left.png" alt="prev" title="previous"></span>
+            <div class="als-viewport">
+                <ul class="als-wrapper">
+                    <li class="als-item"><img src="img/ring1.png" alt=""></li>
+                    <li class="als-item"><img src="img/ring2.png" alt=""></li>
+                    <li class="als-item"><img src="img/ring3.png" alt=""></li>
+                    <li class="als-item"><img src="img/ring4.png" alt=""></li>
+                    <li class="als-item"><img src="img/ring5.png" alt=""></li>
+                    <li class="als-item"><img src="img/ring6.png" alt=""></li>
+                </ul>
+            </div>
+            <span class="als-next"><img src="img/arrow2-right.png" alt="next" title="next"></span>
+        </div>
+        <a href="#" class="btn">Start creating your ring</a>
+    </section>
     <section id="common-quest">
-        <div class="container"></div>
+        <div class="container">
+            <h1>Common Questions</h1>
+            <div id="accordion">
+                <h3>Is this really free?</h3>
+                <div>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</div>
+                <h3>Couldn't I just drive to a jeweler to preview a ring?</h3>
+                <div>Phasellus mattis tincidunt nibh.</div>
+                <h3>Am I obligated to buy the item I preview?</h3>
+                <div>Nam dui erat, auctor a, dignissim quis.</div>
+                <h3>What happens to the ring if I don't buy it?</h3>
+                <div>Nam dui erat, auctor a, dignissim quis.</div>
+                <h3>Am I responsible if anything happens while the item is being shipped?</h3>
+                <div>Nam dui erat, auctor a, dignissim quis.</div>
+                <h3>How will I know when my item is at the jeweler?</h3>
+                <div>Nam dui erat, auctor a, dignissim quis.</div>
+                <h3>Do I need to bring anything when I visit the jeweler?</h3>
+                <div>Nam dui erat, auctor a, dignissim quis.</div>
+            </div>
+            <span class="italic">
+                More Questions?<br>
+                Experts are available to help at <strong>1.888.9RITANI</strong> or Chat Now
+            </span>
+        </div>
     </section>
+    <!-- Accordion Files -->
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <!-- Carousel Files -->
+    <script type="text/javascript" src="js/jquery.als-1.7.min.js"></script>
+    <script>
+        $( "#accordion" ).accordion({
+            collapsible: true,
+            active: false,
+            clearStyle: true
+        });
+        
+        $(document).ready(function() 
+        {
+            $("#CH-Diam").als({
+                visible_items: 7,
+                scrolling_items: 2,
+                orientation: "horizontal",
+                circular: "yes",
+                autoscroll: "no",
+                interval: 5000,
+                speed: 500,
+                easing: "linear",
+                direction: "right",
+                start_from: 0
+            });
+            
+            $("#CH-Ring").als({
+                visible_items: 7,
+                scrolling_items: 2,
+                orientation: "horizontal",
+                circular: "yes",
+                autoscroll: "no",
+                interval: 5000,
+                speed: 500,
+                easing: "linear",
+                direction: "right",
+                start_from: 0
+            });
+            
+        });
+    </script>
 </body>
 </html>
